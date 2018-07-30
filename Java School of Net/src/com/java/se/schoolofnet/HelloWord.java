@@ -121,7 +121,7 @@ public class HelloWord {
         }
     }
 
-    public void functionArrayCollectio() {
+    public void functionArrayCollection() {
         int[] ages = new int[10];
 
         ages[0]=10;
@@ -157,6 +157,13 @@ public class HelloWord {
         }
 
         System.out.println(sum);
+
+        while (!list.isEmpty()) {
+            System.out.println("\nRemovendo elemento: "+list.get(0));
+            list.remove(0);
+        }
+
+        System.out.println("Lista vazia!!\n");
 
     }
 
@@ -209,7 +216,7 @@ public class HelloWord {
                     helloWord.calculator(x, y, op);
                     break;
                 case 4:
-                    helloWord.functionArrayCollectio();
+                    helloWord.functionArrayCollection();
                     break;
                 case 0:
                     System.out.println("Bye " + name + "!!");
