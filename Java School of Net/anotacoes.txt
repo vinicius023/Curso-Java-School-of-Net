@@ -1,0 +1,11 @@
+Pacotes em JAVA são utilizados para:
+	previnir conflitos de names;
+	controlar o acesso;
+	criar arquitetura de software por camada ou modulo;
+OBS: Permitem a criação de classes com o msm nome, com a condição de que estejam em packeges diferentes e uma das classes seja apenas uma class e não uma public class.
+
+Classes:
+	metodos são ações de uma classe ou obj;
+	toda classe tem a classe Object como parent;
+	pesquisar lista de classes wrappers - classes que herdam ações da classe pai facilitando a manipulação de uma variavel;
+	tipos primitivos são mais economicos que as classes wrappers;
