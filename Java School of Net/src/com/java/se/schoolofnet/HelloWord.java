@@ -1,5 +1,6 @@
 package com.java.se.schoolofnet;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -163,8 +164,16 @@ public class HelloWord {
             list.remove(0);
         }
 
-        System.out.println("Lista vazia!!\n");
+        System.out.println("\nLista vazia!!"+list.toString()+"\n");
 
+    }
+
+    public void javaSwing() {
+        Integer age = 0;
+
+        age = Integer.parseInt(JOptionPane.showInputDialog("How old are you?"));
+
+        JOptionPane.showConfirmDialog(null, "Your age is "+age+"!");
     }
 
     public static void main(String[] args) {
@@ -190,6 +199,7 @@ public class HelloWord {
                 "\t2 - funcao2()\n" +
                 "\t3 - calculator()\n" +
                 "\t4 - functionArrayCollectio()\n" +
+                "\t5 - javaSwing()\n" +
                 "\t0 - exit\n" +
                 "";
 
@@ -217,6 +227,9 @@ public class HelloWord {
                     break;
                 case 4:
                     helloWord.functionArrayCollection();
+                    break;
+                case 5:
+                    helloWord.javaSwing();
                     break;
                 case 0:
                     System.out.println("Bye " + name + "!!");
